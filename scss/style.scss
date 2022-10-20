@@ -1,0 +1,308 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,
+center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    font-family: "微軟正黑體";
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+main {
+    display: block;
+}
+ol,ul {
+    list-style: none;
+}
+blockquote,q {
+    quotes: none;
+}
+blockquote:before,blockquote:after,q:before,q:after {
+    content: "";
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0px;
+}
+select,input {
+    outline: none;
+}
+html {
+    background: white;
+    box-sizing: border-box;
+    margin: 0px auto;
+    // user-select: none;
+}
+a:link {
+    text-decoration: none;
+}
+
+//content
+html {
+    width: 100%;
+    height: 100%;
+    background-color: #060612;
+    
+    body {
+        min-width: 1100px;
+        height: auto;
+        overflow: hidden;
+
+        main {
+            width: 100%;
+            height: 1000px;
+            overflow: hidden;
+            position: relative;
+
+            .center {
+                width: 1100px;
+                height: 100%;
+                display: flex;
+                margin: 0 auto;
+                position: relative;
+
+                .left {
+                    width: 50%;
+                    height: 100%;
+                    position: relative;
+    
+                    .logo {
+                        width: 280px;
+                        height: 111px;
+                        background: url(../img/LOGO.png) no-repeat center;
+                        background-size: contain;
+                        z-index: 100;
+                        position: absolute;
+                        top: 76px;
+                        left: 84px;
+                    }
+    
+                    .inputBox {
+                        width: auto;
+                        height: auto;
+                        display: flex;
+                        flex-direction: column;
+                        position: absolute;
+                        top: 225px;
+                        left: 96px;
+                        z-index: 100;
+
+                        .input {
+                            width: auto;
+    
+                            label {
+                                display: flex;
+                                align-items: center;
+                                margin: 0 0 8px 0;
+                                position: relative;
+
+                                .inputIc {
+                                    width: 19px;
+                                    height: 21px;
+                                    background: url(../img/inputIcon.png) no-repeat;
+                                    background-size: 200%;
+                                    position: absolute;
+                                    top: 11px;
+                                    left: 29px;
+                                    z-index: 5;
+
+                                    &.id {
+                                        background-position-x: 0%;
+                                    }
+
+                                    &.pw {
+                                        background-position-x: 100%;
+                                    }
+                                }
+
+                                input {
+                                    width: 240px;
+                                    height: 46px;
+                                    background: #cfcfdfbf;
+                                    border: 2px solid #39619c;
+                                    border-radius: 5px;
+                                    box-shadow: inset 0px 0px 3px rgb(0, 0, 0, 50%);
+                                    color: #ffffff;
+                                    font-size: 20px;
+                                    font-weight: bold;
+                                    letter-spacing: -1px;
+                                    padding: 3px 47px 0 60px;
+                                    box-sizing: border-box;
+                                    margin-bottom: 4px;
+
+                                    &::placeholder {
+                                        color: #535e7a;
+                                        font-size: 20px;
+                                    }
+
+                                    &:focus {
+                                        background: #9495a3e0;
+                                        border: 2px solid #0bbafb;
+                                    }
+                                }
+
+                                &:last-child {
+                                    margin: 0 0 8px 0;
+                                }
+                            }
+                        }
+    
+                        button {
+                            width: 169px;
+                            height: 43px;
+                            background: linear-gradient(to top,#a8afc2 0%, #e7eff3 21%, #c8cdda 40%, #ffffff 67%, #9ba3b9 100%);
+                            border: 1px solid #0bbafb;
+                            border-radius: 5px;
+                            display: flex;
+                            color: #0c40b7;
+                            font-size: 29px;
+                            font-weight: bold;
+                            letter-spacing: 6px;
+                            align-items: center;
+                            justify-content: center;
+                            padding: 0 0 0 10px;
+                            position: absolute;
+                            top: 133px;
+                            right: 36px;
+                            z-index: 4;
+
+                            &:hover,&:active,&.active {
+                                background: #9ba3b9;
+                                border: 1px solid #0bbafb;
+                                color: #ffffff;
+                            }
+                        }
+                        
+                        .btnLine {
+                            width: 143px;
+                            height: 143px;
+                            background: linear-gradient(to top, #c2994f 0%, #7f5f23 26%, #dcbc80 44%, #dcbc80 92%);
+                            border-radius: 50%;
+                            position: absolute;
+                            top: -3px;
+                            right: -160px;
+                            z-index: -2px;
+                        }
+                    }
+    
+                    .unionLogo {
+                        width: 243px;
+                        height: 43px;
+                        background: url(../img/union.png) no-repeat center;
+                        background-size: contain;
+                        position: absolute;
+                        top: 420px;
+                        left: 94px;
+                    }
+                }
+                
+                .right {
+                    width: 50%;
+                    height: 100%;
+                    position: relative;
+
+                    .mainobject1 {
+                        width: 1064px;
+                        height: 600px;
+                        background: url(../img/mainObject1.png) no-repeat;
+                        position: absolute;
+                        bottom: 0px;
+                        right: -410px;
+                        z-index: 4;
+                        animation: invisible 0.3s ease-in-out, showUp 0.2s 0.3s ease-in-out forwards;
+                    }
+                    .mainobject2 {
+                        width: 644px;
+                        height: 927px;
+                        background: url(../img/mainObject2.png) no-repeat;
+                        position: absolute;
+                        bottom: 0px;
+                        right: -224px;
+                        z-index: -4;
+                        animation: invisible 0.7s ease-in-out, showUp2 0.1s 0.7s linear forwards;
+                    }
+                    .mainobject3 {
+                        width: 344px;
+                        height: 622px;
+                        background: url(../img/mainObject3.png) no-repeat;
+                        position: absolute;
+                        bottom: 108px;
+                        right: 172px;
+                        z-index: -5;
+                        animation: invisible 0.9s ease-in-out, showUp2 0.1s 0.9s linear forwards;
+                    }
+                    .mainobject4 {
+                        width: 408px;
+                        height: 450px;
+                        background: url(../img/mainObject4.png) no-repeat;
+                        position: absolute;
+                        bottom: 242px;
+                        right: 344px;
+                        z-index: -6;
+                        animation: invisible 1s ease-in-out, showUp2 0.1s 1s linear forwards;
+                    }
+                }
+            }
+
+            //背景
+            .bg {
+                width: 100%;
+                min-width: 1100px;
+                height: 100%;
+                background: url(../img/BG.png) no-repeat top center;
+                position: absolute;
+                top: 0;
+                z-index: -999;
+            }
+        }
+    }
+}
+
+@keyframes invisible {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes showUp {
+    0% {
+        transform: translate(0,300%);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0,0);
+        opacity: 1;
+    }
+}
+
+@keyframes showUp2 {
+    0% {
+        transform: translate(300%,0);
+        opacity: 0;
+    }
+    40% {
+        transform: translate(120%,0);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(0,0);
+        opacity: 1;
+    }
+}
