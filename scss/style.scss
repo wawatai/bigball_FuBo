@@ -117,7 +117,7 @@ html {
                                     background-size: 200%;
                                     position: absolute;
                                     top: 11px;
-                                    left: 29px;
+                                    left: 23px;
                                     z-index: 5;
 
                                     &.id {
@@ -223,7 +223,7 @@ html {
                         bottom: 0px;
                         right: -410px;
                         z-index: 4;
-                        animation: invisible 0.3s ease-in-out, showUp 0.3s 0.3s ease-in-out forwards;
+                        animation: invisible 0.3s ease-in-out, showUp 0.6s 0.3s ease-in-out forwards;
                     }
                     .mainobject2 {
                         width: 644px;
